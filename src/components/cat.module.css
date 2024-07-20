@@ -1,0 +1,44 @@
+.scCat {
+  max-width: 700px;
+  width: 80%;
+  min-height: 200px;
+  margin: 10px auto;
+  padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 2px solid #ddd;
+
+  & img {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  margin: 20px 0;
+  border-radius: 50%;
+  background-color: #d99;
+  box-shadow: 32px 0 #d99, -32px 0 #d99;
+  position: relative;
+  animation: flash 0.5s ease-out infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #c6644922;
+    box-shadow: 32px 0 #c6644922, -32px 0 #c66449;
+  }
+  50% {
+    background-color: #c66449;
+    box-shadow: 32px 0 #c6644922, -32px 0 #c6644922;
+  }
+  100% {
+    background-color: #c6644922;
+    box-shadow: 32px 0 #c66449, -32px 0 #c6644922;
+  }
+}
